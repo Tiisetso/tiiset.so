@@ -1,0 +1,11 @@
+{{ define "main"}}
+<div>   
+<ul> 
+    {{ range where .Site.RegularPages.ByPublishDate.Reverse "Section" "blog" }}
+    <li>
+        <a href="{{ .RelPermalink }}" class="text-post">{{ .Title }}</a>
+    </li>
+    {{ end }}
+    </ul>
+</div> 
+{{ end }}

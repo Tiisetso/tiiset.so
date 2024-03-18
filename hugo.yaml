@@ -1,4 +1,19 @@
 baseURL: https://tiiset.so
-languageCode: en-us
-title: Tiisetso
-theme: ["PaperMod"]
+languageCode: en-gb
+title: T
+
+params:
+  homeText: Continue reading...
+  author:
+    name: Tiisetso Daniel Murray
+    email: hi@tiisetso.com
+permalinks:
+  blog: '/:filename/'
+menu:
+  main:
+    - name: About
+      url: /about/
+      weight: 3
+    - name: Contact
+      url: /contact/
+      weight: 4

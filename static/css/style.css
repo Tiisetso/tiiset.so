@@ -1,0 +1,97 @@
+html, body {
+    margin: 0 auto;
+    font-family: "Helvetica","Arial",sans-serif;
+    line-height: 1.5;
+    background: white;
+    color: #555;
+}
+
+h1,
+h2,
+strong {
+    color: #333;
+}
+
+h1 {
+    padding: 0 0 0.3em 0;
+}
+
+a:hover {
+    color: #ff4757;
+    text-decoration: none;
+}
+
+.btn-custom {
+    background-color: #ff4757;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.text-post {
+    color: #333;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+a .text-post {
+    text-transform: initial;
+}
+
+p {
+    max-width: 30em;
+}
+
+#main{
+    padding: 0 0 10em 1em;
+}
+
+#main li {
+    padding-bottom: 1em;
+}
+
+nav {
+    background-color: white;
+    margin-bottom: 1.5em;
+}
+
+/* change the brand and text color */
+.bg-custom .navbar-brand,
+.bg-custom .navbar-text {
+    color: #ff4757;
+    font-weight: 600;
+}
+
+#footer {
+    display: none;
+    position: relative;
+    bottom: 0;
+    width: 100;
+    text-align: center;
+    opacity: 50%;
+    font-size: 0.6em;
+    height: 2em;
+}
+
+#form-group{
+    background-color: black;
+
+}
+form {
+    max-width: 30em;
+}
+
+h5 {
+    margin: 2em 0 0.5em 0
+}
+
+h6 {
+    margin: 0.5em 0;
+}
+
+th, td{
+    padding: 0 0.5em 0 0;
+}
