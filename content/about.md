@@ -5,7 +5,7 @@ title:
 
 I'm Tiisetso.
 
-This is blog is an exploration. It is not meant to be anything in particular. The views here to represent those of anyone I may work with or for. They are my own as shared somewhat arbitrarily. 
+This is blog is an exploration. It is not meant to be anything in particular. The views expressed here do not represent those of anyone I may work with or for. They are my own as shared somewhat arbitrarily. 
 
 If you read something here that you enjoy, resonate, or even disagree with. Let me know.
 
