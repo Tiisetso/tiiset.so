@@ -2,6 +2,8 @@
 title: "Now"
 ---
 
+_Last Updated: 2024/04/11_
+
 What I am doing or at least trying to do in various aspects of my life.
 
 ###### Running
