@@ -2,9 +2,9 @@
 title: "Now"
 ---
 
-_Last Updated: 2024/04/11_
+_Last Updated: 2024/04/12_
 
-What I am doing or at least trying to do in various aspects of my life.
+What I am doing or at least trying to do in various aspects of my life at the moment. For now the below mostly pertains to personal trends.
 
 ###### Running
 
