@@ -59,3 +59,11 @@ I am simultaneously trying to find or create my own work. If you're hiring or lo
 ###### Writing
 
 I am simply aim to write more and enjoy the interaction that those who resonate (or disgree!) with my writing bring into my life. In my social circles I'm well known for writing the longest text messages and in person talking for hours and hours. If I have an upper limit I have not yet found it. This I've found is a lot for pretty much everyone and writing is more than a suitable substitute as it also helps to organise and develop thoughts.
+
+###### Language Learning
+
+It is a goal of mine to speak more languages. Like most first language English speakers it has remained the only language I'm comfortable in. I lived for a couple of years in Beijing and have some ability to communicate in Mandarin. I would like this to be better, much better. I have the dream of being able to Liu Cixin's Three Body Problem in original Mandarin. In this regard I'm studying Mandarin Chinese again.
+
+Chinese however is the not only language I wish to learn. I am also learning Finnish. Many argue that it is not a useful language to learn but I argue that use is not the only criteria by which one should measure their interests. It would indeed be very useful living in Finland, or in my cas,e being partnered with a Finn. However, I do find it deeply interesting as it is has an unusual grammatical structure and I enjoy the way it feels on the tongue.
+
+If my language ambition is not already too grand, I too wish to have some command of Japanese and Tsonga. Japanese as a matter of interest in the society and culture that I've largely only known from a distance but is one that I do find fascinating. Tsonga because it is my mother's first language and one that I have never known her it. I would love to have a handle on the basics. Of all the languages here, Tsonga frustratingly has the hardest pronounciation for me and additionally has the least learning available learning materials. I may have to wait for AI enabled language tutors before ground can be made here.
