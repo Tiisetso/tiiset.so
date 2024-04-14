@@ -2,9 +2,9 @@
 title: "Now"
 ---
 
-_Last Updated: 2024/04/12_
+_Last Updated: 2024/04/14_
 
-What I am doing or at least trying to do in various aspects of my life at the moment. For now the below mostly pertains to personal trends.
+What I am doing or at least trying to do in various aspects of my life at the moment. In no particular order.
 
 ###### Running
 
@@ -45,3 +45,17 @@ This teeters dangerously on the notion of superiority, that is expressly not the
 ###### Khadiramina
 
 Khadiramina, Tsonga for "my card", is my first small project that enables iOS users to store their loyalty cards in their digital wallets. South African companies do not take feature expecting customers to carry a stack of loyalty cards. From what I've observed people forget their cards regularly and in some ways they serve little utility. However, Apple's Wallet app can store them on phones and even have them be geographically aware. This project is a very small one but address in its very small way my goal of improving digital services here.
+
+###### Rihanyo
+
+Rihanyo, Tsonga for "health", is iOS app that functions as health dashboard for observing weekly fitness trends. This is a project to also explore and understand working with SwiftUI and making an app for iOS devices. I feel in terms of health management it is the week to week to week trend that is underated. Daily is too specific and monthly is too broad. The idea is that it is tricky plan a whole month's worth of fitness plans and stick to them but planning a week is more manageable.
+
+Long term I'd like to enable an AI coaching function to consider recommended certain activities or notice when trends are improving, declining, or is one is beginning to take strain. I feel this is likely something Apple is working on.
+
+###### Searching for work
+
+I am simultaneously trying to find or create my own work. If you're hiring or looking to collaborate let me know. I am particularly interested in opportunities that would bring me into Schegen Europe and in particular Finland. I am however genuinely open and also happy to work remotely across timezones.
+
+###### Writing
+
+I am simply aim to write more and enjoy the interaction that those who resonate (or disgree!) with my writing bring into my life. In my social circles I'm well known for writing the longest text messages and in person talking for hours and hours. If I have an upper limit I have not yet found it. This I've found is a lot for pretty much everyone and writing is more than a suitable substitute as it also helps to organise and develop thoughts.
