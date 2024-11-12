@@ -2,7 +2,7 @@
 title: "Now"
 ---
 
-_Last Updated: 2024/04/14_
+_Last Updated: 2024/11/12_
 
 What I am doing or at least trying to do in various aspects of my life at the moment. In no particular order.
 
@@ -22,7 +22,7 @@ I've always been on the heavier side. My body's natural disposition provides me 
 
 Expressed simply, can I become lean and can I stay there? And if so can I remain being strong too?
 
-From a peak of of 96kg in October 2023 I'm now down to 78kg in April 2024. My goal is 70kg which will place me just above the healthy BMI midpoint of 21.75.
+From a peak of of 96kg in October 2023 I'm now down to 82kg in November 2024. My goal is 70kg which will place me just above the healthy BMI midpoint of 21.75.
 
 ###### Full Stack Development
 
