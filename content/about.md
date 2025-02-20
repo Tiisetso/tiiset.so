@@ -4,7 +4,7 @@ title:
 
 # Hi,
 
-I'm Tiisetso.
+I'm Tiisetso
 
 This is my blog. I write here to share my thoughts, ideas, and experiences with whoever stumbles upon this corner of the internet. If you've found yourself here, welcome!
 

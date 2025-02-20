@@ -2,7 +2,7 @@
 title: "Now"
 ---
 
-_Last Updated: 2024/11/12_
+_Last Updated: 2025/02/14_
 
 What I am doing or at least trying to do in various aspects of my life at the moment. In no particular order.
 
