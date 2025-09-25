@@ -1,0 +1,86 @@
+{{/* Shortcode: staticgallery
+	Usage: {{< staticgallery dir="img/hunan" cols="4" >}}
+*/}}
+
+{{- $rawDir := .Get "dir" | default "img" -}}
+{{- $dir := $rawDir | replaceRE "^/+" "" | replaceRE "/+$" "" -}}
+{{- $cols := .Get "cols" | default "3" -}}
+{{- $abs  := printf "static/%s" $dir -}}
+
+{{- if not (fileExists $abs) -}}
+ <p><em>Gallery directory not found:</em> <code>{{ $abs }}</code></p>
+{{- else -}}
+ {{- $files := readDir $abs -}}
+ {{- $imgs := slice -}}
+ {{- range $files -}}
+   {{- if and (not .IsDir) (or (hasSuffix .Name ".jpg") (hasSuffix .Name ".JPG") (hasSuffix .Name ".jpeg") (hasSuffix .Name ".png") (hasSuffix .Name ".webp") (hasSuffix .Name ".gif")) -}}
+	 {{- $imgs = $imgs | append . -}}
+   {{- end -}}
+ {{- end -}}
+
+ {{- if eq (len $imgs) 0 -}}
+   <p><em>No images found</em> in <code>{{ $abs }}</code>.</p>
+ {{- else -}}
+   <div class="sg-grid sg-cols-{{ $cols }}">
+	 {{- range sort $imgs "Name" -}}
+	   {{/* Encode for PATH (spaces → %20), not query (which would use +) */}}
+	   {{- $nameEnc := replaceRE "\\s" "%20" .Name -}}
+	   {{- $path := printf "%s/%s" $dir $nameEnc -}}
+	   {{- $src  := $path | relURL -}}
+	   <a class="sg-item" href="{{ $src }}" data-sg>
+		 <img loading="lazy" src="{{ $src }}" alt="{{ .Name }}">
+	   </a>
+	 {{- end -}}
+   </div>
+ {{- end -}}
+{{- end -}}
+
+<style>
+.sg-grid{display:grid;gap:12px}
+.sg-cols-2{grid-template-columns:repeat(2,1fr)}
+.sg-cols-3{grid-template-columns:repeat(3,1fr)}
+.sg-cols-4{grid-template-columns:repeat(4,1fr)}
+.sg-item img{width:100%;height:auto;display:block;border-radius:.75rem}
+.sg-lightbox{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;
+ align-items:center;justify-content:center;z-index:9999;padding:2rem}
+.sg-lightbox.open{display:flex}
+.sg-lightbox img{max-width:95vw;max-height:90vh}
+.sg-lightbox .close{position:absolute;top:1rem;right:1rem;color:#fff;
+ font-size:2rem;line-height:1;cursor:pointer}
+</style>
+
+<div id="sg-lightbox" class="sg-lightbox" aria-hidden="true">
+ <span class="close" aria-label="Close">&times;</span>
+ <img alt="">
+</div>
+
+<script>
+(function(){
+ const lb = document.getElementById('sg-lightbox');
+ if(!lb) return;
+ const img = lb.querySelector('img');
+ const close = lb.querySelector('.close');
+
+ function open(src, alt){
+   img.src = src; img.alt = alt||"";
+   lb.classList.add('open');
+   lb.setAttribute('aria-hidden','false');
+ }
+ function hide(){
+   lb.classList.remove('open');
+   lb.setAttribute('aria-hidden','true');
+   img.src="";
+ }
+
+ document.addEventListener('click', e=>{
+   const a = e.target.closest('a[data-sg]');
+   if(!a) return;
+   e.preventDefault();
+   const i = a.querySelector('img');
+   open(a.getAttribute('href'), i ? i.getAttribute('alt') : "");
+ });
+ close.addEventListener('click', hide);
+ lb.addEventListener('click', e=>{ if(e.target === lb) hide(); });
+ document.addEventListener('keydown', e=>{ if(e.key === 'Escape') hide(); });
+})();
+</script>

@@ -1,16 +1,22 @@
-
 <nav class="navbar navbar-expand-sm navbar-light bg-custom">
-  <a class="navbar-brand" href="/">{{ .Site.Title }}</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav ml-auto mt-lg-0">
-      {{ range .Site.Menus.main }} 
-      <li class="nav-item ">
-        <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
-        {{ end }}
-      </li>
-    </ul>
-</div>
-</nav>
+	<a class="navbar-brand" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	  <span class="navbar-toggler-icon"></span>
+	</button>
+  
+	<div class="collapse navbar-collapse" id="navbarNav">
+	  <ul class="navbar-nav ml-auto mt-lg-0">
+		{{ $cur := . }}
+		{{ range .Site.Menus.main }}
+		  {{ $isActive := or ($cur.IsMenuCurrent "main" .) ($cur.HasMenuCurrent "main" .) }}
+		  <li class="nav-item{{ if $isActive }} active{{ end }}">
+			<a class="nav-link" href="{{ .URL | relURL }}"{{ if $isActive }} aria-current="page"{{ end }}>
+			  {{ .Name }}
+			</a>
+		  </li>
+		{{ end }}
+	  </ul>
+	</div>
+  </nav>
+  
